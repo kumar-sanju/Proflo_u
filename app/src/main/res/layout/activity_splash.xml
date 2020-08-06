@@ -8,19 +8,6 @@
     android:background="@drawable/bg3"
     tools:context=".SplashActivity">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/ballon"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="62dp"-->
-<!--        android:background="@drawable/ballon"-->
-<!--        app:layout_constraintRight_creator="1"-->
-<!--        app:layout_constraintTop_creator="1"-->
-<!--        app:layout_constraintLeft_creator="1"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <Button
         android:id="@+id/startBtn"
         android:layout_width="wrap_content"
@@ -29,7 +16,6 @@
         android:background="@drawable/sub_btn"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-
         />
 
 </RelativeLayout>
