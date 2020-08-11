@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSetupActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        />
+    <EditText
+        android:id="@+id/EmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:hint="Email or Username"
+        />
+    <EditText
+        android:id="@+id/EmailLogin"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:hint="Email or Username"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmailRegister"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:hint="Password"
+        />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_below="@id/EmailRegister"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="0dp"
+        />
+
+    <TextView
+        android:id="@+id/forgotPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Forgot password?"
+        android:layout_below="@+id/Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please carefully read our terms and Condition?"
+        android:layout_below="@id/forgotPw"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#ff6600"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        />
+    <Button
+        android:id="@+id/googleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/terms"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/congoogle"
+        />
+    <Button
+        android:id="@+id/fbBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/googleBtn"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/confb"
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="Age"
+        android:textSize="20sp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="230dp" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="Gender"
+        android:textSize="20sp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginRight="70dp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="Weight"
+        android:textSize="20sp"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp" />
+
+    <EditText
+        android:id="@+id/disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:hint="Preexisting Diseases"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp" />
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="70dp"
+        android:hint="Mobile Number"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/tv_skip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/next_btn"
+        android:text="Skip"
+        android:textColor="@color/tab_indicator_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@+id/tv_skip"
+        android:layout_centerHorizontal="true"
+        app:tabBackground="@drawable/indicator_selector">
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tab_indicator"
+        android:background="@drawable/next_btn"
+        android:text="Save"
+        android:textColor="@color/tab_indicator_gray" />
+
+    <Button
+        android:id="@+id/resendBtn"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tab_indicator"
+        android:background="@drawable/next_btn"
+        android:text="Resend"
+        android:textColor="@color/tab_indicator_gray" />
+
+    <Button
+        android:id="@+id/sendOtp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tab_indicator"
+        android:background="@drawable/next_btn"
+        android:text="Send OTP"
+        android:textColor="@color/tab_indicator_gray" />
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tab_indicator"
+        android:background="@drawable/next_btn"
+        android:text="Login"
+        android:textColor="@color/tab_indicator_gray" />
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_above="@id/tab_indicator"
+        android:background="@drawable/next_btn"
+        android:text="Register"
+        android:textColor="@color/tab_indicator_gray" />
+
+
+</RelativeLayout>

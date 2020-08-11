@@ -83,31 +83,23 @@
     <Button
         android:id="@+id/googleBtn"
         android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:height="60dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/line2"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="40dp"
-        android:text="Continue with Google"
-        android:drawableLeft="drawable/google"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:background="#4169e1"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/congoogle"
+        />
 
     <Button
         android:id="@+id/fbBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@+id/googleBtn"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="10dp"
-        android:text="Continue with Facebook"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:background="#4169e1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/confb"
         />
 
     <TextView

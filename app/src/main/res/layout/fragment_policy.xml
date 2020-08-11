@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PolicyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Anti-spam policy"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANTI-SPAM POLICY FOR EMAIL AND MOBILE MARKETING\n\n
+-Sign-Up.to is a Permission Marketing company and is committed to helping reduce the problems of Unsolicited Commercial Email (UCE), commonly referred to as ‘Spam’."
+        android:layout_marginTop="40dp"
+        />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Our definition of spam"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="– We view any unsolicited, unexpected email/SMS as spam.\n\n
+– We don’t allow use of 3rd party lists in the Sign-Up.to platform, whether consent has been gathered or not. We don’t believe that consent is transferable between organisations. This is a condition of platform use.\n\n
+– Relevance is a foundation of Permission based marketing. We believe that any communications sent to a subscriber about an unrelated subject to that which they requested to be kept informed about are spam.\n\n
+– By default, all new subscriptions made via use of the Sign-Up.to platform are double opt-in verified and, as a legal requirement, all subscribers can unsubscribe quickly and easily at any time.\n\n
+–We view any unsolicited, unexpected email/SMS as spam.\n\n
+– We don’t allow use of 3rd party lists in the Sign-Up.to platform, whether consent has been gathered or not. We don’t believe that consent is transferable between organisations. This is a condition of platform use.\n\n
+– Relevance is a foundation of Permission based marketing. We believe that any communications sent to a subscriber about an unrelated subject to that which they requested to be kept informed about are spam.\n\n
+– By default, all new subscriptions made via use of the Sign-Up.to platform are double opt-in verified and, as a legal requirement, all subscribers can unsubscribe quickly and easily at any time."
+            android:layout_marginTop="180dp"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
