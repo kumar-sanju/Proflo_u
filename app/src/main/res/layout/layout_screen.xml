@@ -31,7 +31,6 @@
                 />
             <ImageView
                 android:id="@+id/intro_img"
-                android:src="@drawable/brochure"
                 android:layout_marginTop="10dp"
                 android:layout_below="@id/intro_title"
                 android:layout_width="match_parent"

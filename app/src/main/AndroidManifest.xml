@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sanju.proflo_u">
+    package="com.prantae.proflo_u">
 
     <application
         android:allowBackup="true"
@@ -9,20 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-
-        <activity android:name=".AccountSetupActivity">
+        <activity android:name="com.prantae.proflo_u.HomeActivity"></activity>
+        <activity android:name="com.prantae.proflo_u.Onboarding.OnboardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PhoneLoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashActivity">
-
-        </activity>
+        <activity android:name="com.prantae.proflo_u.AccountSetupActivity"></activity>
+        <activity android:name="com.prantae.proflo_u.PhoneLoginActivity" />
+        <activity android:name="com.prantae.proflo_u.RegisterActivity" />
+        <activity android:name="com.prantae.proflo_u.LoginActivity" />
+        <activity android:name="com.prantae.proflo_u.SplashActivity" />
     </application>
 
 </manifest>

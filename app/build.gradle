@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.sanju.proflo_u"
+        applicationId "com.prantae.proflo_u"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
