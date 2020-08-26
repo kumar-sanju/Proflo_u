@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#f7c59f</color>
+    <color name="colorPrimaryDark">#FAC604</color>
     <color name="colorAccent">#03DAC5</color>
 
     <color name="tab_indicator_gray">#fff</color>
@@ -12,10 +12,17 @@
     <color name="gradient_end_color">#F64B15</color>
 
     <color name="color1">#9932CC</color>
-    <color name="color2">#FF00FF</color>
-    <color name="color3">#59717c</color>
-    <color name="color4">#228B22</color>
-    <color name="color5">#008080</color>
+    <color name="color2">#d4cbe5</color>
+    <color name="color3">#7adccf</color>
+    <color name="color4">#f7c59f</color>
+    <color name="color5">#b8d7f5</color>
+
+<!--    <color name="color">#FAC604</color>-->
+<!--    <color name="color3">#59717c</color>-->
+<!--    <color name="color4">#228B22</color>-->
+<!--    <color name="color5">#008080</color>-->
+
+
 
     <color name="lightwhite">#EFBDB2</color>
 

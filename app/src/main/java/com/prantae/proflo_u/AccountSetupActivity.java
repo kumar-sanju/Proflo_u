@@ -203,7 +203,7 @@ public class AccountSetupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent mainActivity = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent mainActivity = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(mainActivity);
                 finish();
             }

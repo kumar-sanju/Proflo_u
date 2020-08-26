@@ -13,8 +13,13 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
 
-
+    <style name="navigationTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 
 </resources>

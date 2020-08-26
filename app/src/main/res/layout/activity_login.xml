@@ -5,127 +5,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.prantae.proflo_u.LoginActivity">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginLeft="0dp"
-        />
-
-    <View
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_below="@+id/text"
-        android:layout_height="0.1dp"
-        android:background="#ff6600" />
+        android:layout_height="400dp"
+        app:cardCornerRadius="50dp"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color5"
+            >
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/semibold"
+                android:text="Login to Proflo-U"
+                android:textColor="@android:color/black"
+                android:transitionName="transition_title_text"
+                android:textSize="20sp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:transitionName="transition_cross"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email or phone number"
+                android:textAlignment="center"
+                android:gravity="center"
+                app:startIconTint="@android:color/black"
+                app:hintTextColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@android:color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@android:color/black"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_marginTop="20dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:hint="Email or Username"
-        />
+            <ImageView
+                android:id="@+id/nextBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/back"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="165dp"
+                android:scaleX="-1"
+                android:background="@android:color/white"
+                />
 
-    <EditText
-        android:id="@+id/Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Email"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:hint="Password"
-        />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/phoneNo"
+                android:layout_marginTop="150dp"
+                android:background="#656565"
+                >
+                <TextView
+                    android:id="@+id/acount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Don't have an account?"
+                    android:textColor="@android:color/black"
+                    android:transitionName="transition_text1"
+                    />
+                <TextView
+                    android:id="@+id/registerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="265dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="Register"
+                    android:textColor="#F64B15"
 
-    <TextView
-        android:id="@+id/forgotPw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot password?"
-        android:layout_below="@+id/Password"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"
-        />
+                    />
 
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Password"
-        android:layout_marginLeft="280dp"
-        android:layout_marginTop="15dp"
-        android:text="Log In"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:background="#ff6600"
-        />
-
-    <View
-        android:id="@+id/line2"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/loginBtn"
-        android:layout_marginTop="10dp"
-        android:layout_height="0.11dp"
-        android:background="#ff6600" />
-
-    <Button
-        android:id="@+id/googleBtn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/line2"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/congoogle"
-        />
-
-    <Button
-        android:id="@+id/fbBtn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/googleBtn"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/confb"
-        />
-
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have an account?"
-        android:layout_below="@id/fbBtn"
-        android:layout_marginTop="30dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="85dp" />
-
-    <TextView
-        android:id="@+id/registerBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:layout_below="@id/fbBtn"
-        android:layout_marginTop="30dp"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        android:textColor="#ff6600"
-        android:layout_marginLeft="250dp"
-        />
-
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
